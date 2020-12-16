@@ -1,8 +1,35 @@
 .feed-form {
-    margin-top: 36px;
     display: flex;
     flex-direction: column;
     width: 300px;
+    .error {
+        border: 1px solid red;
+        &:focus {
+            outline: 0;
+        }
+    }
+    input {
+        &:focus {
+            outline-color: #919191;
+        }
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: -15px;
+        color: red;
+        font-size: 14px;
+    }
+    &_main {
+        margin-top: 36px;
+        label.error {
+            color: #fff;
+        }
+    }
+    &_popup {
+        margin: 25px auto 0 auto;
+    }
     input {
         height: 50px;
         background-color: #ffffff;

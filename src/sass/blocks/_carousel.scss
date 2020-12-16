@@ -29,4 +29,21 @@
         right: -13px;
     }
     
+    .tns-nav {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        button {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            background-color: #fff;
+            border: 1px solid #4b4b4b;
+            border-radius: 50%;
+        }
+        .tns-nav-active {
+            background-color: #4b4b4b;
+        }
+    }
+    
 }

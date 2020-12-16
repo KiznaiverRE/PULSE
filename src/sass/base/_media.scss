@@ -1,6 +1,22 @@
 @media (max-width: 1200px) {
     .container {
-        width: 90%;
+        max-width: 720px;
+    }
+
+    .carousel {
+        .prev {
+            left: -50px;
+        }
+        .next {
+            right: -50px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 400px;
+            height: 250px;
+            padding: 30px 48px 30px 48px;
+        }
     }
 }
 
@@ -25,6 +41,12 @@
         }
     }
 
+    .advantages {
+        &__block {
+            max-width: 205px;
+    }
+}
+
     .consultation {
         padding-left: 30px;
         &__descr {
@@ -32,8 +54,62 @@
         }
     }
 
+    .carousel {
+        .prev, .next {
+            display: none;
+        }
+    }
+
+    .catalog {
+        padding-bottom: 60px;
+        &-item {
+            margin: 0 auto 20px auto;
+            max-width
+            &__old-price {
+                font-size: 12px;
+            }
+            &__price {
+                font-size: 18px;
+            }
+    }
+    .button_mini {
+        width: 111px;
+        height: 35px;
+    }
+}
+
     .title_left {
         font-size: 30px;
+    }
+    .footer {
+        &__info {
+            width: 350px;
+            height: 200px;
+            padding: 25px 38px 25px 38px;
+        }
+        &__addr {
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        &__phone {
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        &__social-item {
+            width: 40px;
+            height: 40px;
+        }
+        .icon {
+            &_facebook {
+                width: 12px;
+            }
+            &_instagram {
+                width: 21px;
+            }
+            &_pinterest {
+                width: 20px;
+            }
+        }
     }
 }
 
@@ -45,6 +121,19 @@
         &__official {
             position: absolute;
             bottom: 130px;
+        }
+    }
+
+    .container {
+        max-width: 530px;
+        margin: 0 10px;
+    }
+
+    .modal {
+        width: 340px;
+        padding: 28px 26px 30px 31px;
+        &__subtitle {
+            font-size: 16px;
         }
     }
     
@@ -100,10 +189,10 @@
         }
     }
         
-     .feed-form {
+    .feed-form {
         width: 265px;
         input {
-            height: 45px;
+            height: 40px;
         }
     }
 
@@ -111,29 +200,69 @@
         height: 50px;
     }
     .carousel{
-        .prev, .next {
-            display: none;
-        }
-
-        .tns-nav {
-            position: absolute;
-            right: 50%;
-            transform: translateX(50%);
-            button {
-                width: 16px;
-                height: 16px;
-                margin-right: 5px;
-                background-color: #fff;
-                border: 1px solid #4b4b4b;
-                border-radius: 50%;
-            }
-            .tns-nav-active {
-                background-color: #4b4b4b;
-            }
-        }
-
         .tns-slide-active {
             margin: 0 2px;
+        }
+    }
+
+    .catalog {
+        &__tab {
+            max-width: 25%;
+            font-size: 15px;
+        }
+        .button_mini {
+            width: 150px;
+            height: 45px;
+            font-size: 15px;
+        }
+    }
+
+    .feed {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            &:nth-child(2) {
+                margin-top: 50px;
+            }
+        }
+        &__text {
+            padding: 0 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__img {
+            margin-right: 0;
+        }
+    }
+    .footer {
+        &__info {
+            width: 250px;
+            height: 150px;
+            padding: 25px 20px 15px 20px;
+        }
+        &__addr {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+        &__phone {
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+        &__social-item {
+            width: 30px;
+            height: 30px;
+        }
+        .icon {
+            &_facebook {
+                width: 10px;
+            }
+            &_instagram {
+                width: 12px;
+            }
+            &_pinterest {
+                width: 12px;
+            }
         }
     }
 }
@@ -148,6 +277,15 @@
         }
         &__phone {
             font-size: 14px;
+        }
+    }
+
+    .modal {
+        width: 95%;
+        margin: 10px auto;
+        &__close {
+                right: 10px;
+                top: 10px;
         }
     }
 
@@ -178,6 +316,12 @@
     .title_left {
         font-size: 20px;
     }
+
+    .catalog {
+        &__tab {
+            font-size: 10px;
+        }
+    }
 }
 
 @media (max-width: 420px) {
@@ -191,14 +335,27 @@
     .promo {
         &__wrapper {
             align-items: center;
+            margin-top: 20px;
+        }
+        &__header {
+            font-size: 20px;
+        }
+        &__subheader {
+            font-size: 10px;
         }
         &__icons {
-            width: 90%;
+            width: 100%;
+        }
+    }
+
+    .advantages {
+        &__descr {
+            font-size: 12px;
         }
     }
 
     .title {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .button_main {
@@ -209,7 +366,76 @@
         font-size: 13px;
     }
 
-    .feed-form {
-        width: 90%;
+    .feed {
+        &-form {
+            width: 90%;
+            &_popup {
+                input {
+                    height: 35px;
+                }
+            }
+        }
+    }   
+
+    .catalog {
+        padding-bottom: 30px;
+        &__tabs {
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+        &__tab {
+            max-width: 55%;
+            margin-bottom: 10px;
+            height: 35px;
+            line-height: 33px;
+        }
+
+        &__content {
+            margin-top: 25px;
+        }
+        &-item {
+            width: 250px;
+            &__content {
+                transform: translateX(-110%);
+                &_active {
+                    transform: translateX(0%);
+                }
+            }
+            img {
+                max-width: 50%;
+                height: auto;
+            }
+            &__old-price {
+                font-size: 12px;
+            }
+            &__price {
+                font-size: 16px;
+            }
+            hr {
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .button_mini {
+            width: 100px;
+        }
+    }
+
+    .feed {
+        &__item {
+            &:nth-child(2) {
+                margin-top: 30px;
+            }
+        }
+        &__descr {
+            font-size: 13px;
+        }
+    }
+
+    .footer {
+        &__info {
+            display: none;
+        }
     }
 }

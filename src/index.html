@@ -24,7 +24,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
 
@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или 
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -99,12 +99,11 @@
                 Просто заполните форму заявки<br>
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+            <form id="consultation-form" class="feed-form feed-form_main feed-foaction="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
 
-                <!-- <input type="submit" value="заказать кОНСУЛЬТАЦИЮ"> -->
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
                 
                 <div class="toggle-button-cover">
@@ -179,7 +178,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -508,15 +507,102 @@
 
     <section class="feed">
         <div class="container">
-            
+            <h2 class="title">отзывы клиентов</h2>
+            <div class="feed__item">
+                <img src="img/feed_1.png" alt="feed 1" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__subheader">Ирина Иванченко</div>
+                    <div class="feed__count">2 полумарафона</div>
+                    <div class="feed__descr"><p>Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.
+                    Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.</p>
+                    <p>Новые цели - новый гаджет!</p>
+                    <p>Спасибо, RunSmart!</p></div>
+                </div>
+            </div>
+            <div class="feed__item">
+                <img src="img/feed_2.png" alt="feed 2" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__subheader">Иван Сёмочкин</div>
+                    <div class="feed__count">1 полумарафон</div>
+                    <div class="feed__descr"><p>Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. 
+                    Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.</p>
+                    <p>С ними подготовился к своему первому полумарафону! Спасибо!!!</p></div>
+                </div>
+            </div>
+            <div class="feed__item">
+                <img src="img/feed_3.png" alt="feed 3" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__subheader">Юлия Дашкина</div>
+                    <div class="feed__count">2 полумарафона</div>
+                    <div class="feed__descr"><p>Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.</p>
+                    <p>Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!</p>
+                    <p>Спасибо!!!</p></div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae51fa82ce8f21ec6f0bdf4e975efbf7485274be505956abf5570a26e2d10f4bf&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
+        <div class="footer__info">
+            <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
+            <a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
+            <div class="footer__social">
+                <a href="#" class="footer__social-item"><svg class="icon icon_facebook">
+                    <use xlink:href="icons/icons.svg#facebook"></use>
+                  </svg></a>
+                <a href="#" class="footer__social-item"><svg class="icon icon_instagram">
+                    <use xlink:href="icons/icons.svg#instagram"></use>
+                  </svg></a>
+                <a href="#" class="footer__social-item"><svg class="icon icon_pinterest">
+                    <use xlink:href="icons/icons.svg#pinterest"></use>
+                  </svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_popup" action="#">
+                <input name="name" required maxlength="100" placeholder="Ваше имя" type="text">
+                <input name="phone" required minlength="5" placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+
+                <!-- <input type="submit" value="заказать кОНСУЛЬТАЦИЮ"> -->
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="feed-form feed-form_popup" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+
+                <!-- <input type="submit" value="заказать кОНСУЛЬТАЦИЮ"> -->
+                <button class="button button_submit">Купить</button>
+            </form>
+        </div>
+        <div class="modal" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами 
+                в ближайшее время!</div>
+        </div>
+    </div>
     
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
